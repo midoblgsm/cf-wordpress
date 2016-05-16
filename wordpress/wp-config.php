@@ -22,7 +22,7 @@
 /** The name of the database for WordPress */
 
 $services = json_decode($_ENV['VCAP_SERVICES'], true);
-$service = $services['p-mysql'][0];
+$service = $services['user-provided'][0];
 
 define('DB_NAME', $service['credentials']['name']);
 
