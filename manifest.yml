@@ -1,5 +1,5 @@
 ---
 applications:
-- name: vf-wordpress
+- name: persi-wordpress
   path: wordpress/
   buildpack: https://github.com/cloudfoundry/php-buildpack.git

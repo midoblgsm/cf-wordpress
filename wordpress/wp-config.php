@@ -24,16 +24,16 @@
 $services = json_decode($_ENV['VCAP_SERVICES'], true);
 $service = $services['user-provided'][0];
 
-define('DB_NAME', $service['credentials']['name']);
+define('DB_NAME','cfpersiwordpress');
 
 /** MySQL database username */
-define('DB_USER', $service['credentials']['username']);
+define('DB_USER','admin');
 
 /** MySQL database password */
-define('DB_PASSWORD', $service['credentials']['password']);
+define('DB_PASSWORD','c1oudc0w');
 
 /** MySQL hostname */
-define('DB_HOST',  $service['credentials']['hostname'] . ':' . $service['credentials']['port']);
+define('DB_HOST', 'cmbdr5znvz7v.us-east-1.rds.amazonaws.com:3306');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
