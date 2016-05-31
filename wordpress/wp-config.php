@@ -23,20 +23,20 @@
 
 $services = json_decode($_ENV['VCAP_SERVICES'], true);
 $service = $services['user-provided'][0];
-
-define('DB_NAME','cfpersiwordpress');
+define('DB_NAME','ad_454dea9d5b4cd29');
 
 /** MySQL database username */
-define('DB_USER','admin');
+define('DB_USER','bfa692dd2e2697');
 
 /** MySQL database password */
-define('DB_PASSWORD','c1oudc0w');
+define('DB_PASSWORD','0d0f9f5f');
 
 /** MySQL hostname */
-define('DB_HOST', 'cmbdr5znvz7v.us-east-1.rds.amazonaws.com:3306');
+define('DB_HOST', 'us-cdbr-iron-east-04.cleardb.net:3306');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
+
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
